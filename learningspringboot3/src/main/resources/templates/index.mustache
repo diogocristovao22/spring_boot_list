@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftFood</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            width: 50%;
+        }
+        input[type="text"], input[type="date"] {
+            width: 30%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 align="center">SwiftFood</h1>
+    <h2 align="center">
+        Faça seu pedido
+    </h2>
+
+    <table align="center" class="tabela" border="1">
+        <tr>
+            <th width="150">Nome</th>
+            <th width="150">Bedidas</th>
+            <th width="150">Acompanhamentos</th>
+            <th width="150">Data</th>
+        </tr>
+
+        {{#videos}}
+            <tr>
+                <td align="center">{{name}}</td>
+                <td align="center">{{bebida}}</td>
+                <td align="center">{{acomp}}</td>
+                <td align="center">{{data}}</td>
+            </tr>
+        {{/videos}}
+    </table>
+</body>
+
+<br>
+
+<form id="form-novo-video" action="new-video" method="post" align="center">
+    <input type="text" id="nome-video" name="name" placeholder="Nome">
+    <input type="text" id="bebida" name="bebida" placeholder="Bebidas">
+    <input type="text" id="acomp" name="acomp" placeholder="Acompanhamento">
+    <input type="text" id="data" name="data" placeholder="Data (xx/xx/xxxx)">
+
+    <button type="submit">Adicionar</button>
+</form>
+
