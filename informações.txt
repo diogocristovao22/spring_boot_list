@@ -1,3 +1,3 @@
-Aqui está uma atividade elaborada por min, sugerida pela faculdade uninassau, uma aplicação spring boot realizada no Vscode, tema sugerido é uma listagem de pedidos de um aplicativo mobile,
+Aqui está uma atividade realizada por min, sugerida pela faculdade uninassau, uma aplicação spring boot realizada no Vscode, tema sugerido é uma listagem de pedidos de um aplicativo mobile,
 os arquivos estão separados com o intuito de ter certa organização
 
